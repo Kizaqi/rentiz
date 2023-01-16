@@ -1,0 +1,123 @@
+.hero {
+    background-color: $color-first;
+    padding-top: 95px;
+
+    .drop {
+        display: flex;
+        padding: 29px 5px 29px 40px;
+        max-width: 889px;
+        width: 100%;
+        background-color: #fff;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        margin-top: 80px;
+
+        h4 {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 126%;
+            text-transform: capitalize;
+        }
+
+
+        .dropbtn {
+            color: $color-four;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            overflow: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown a:hover {
+            background-color: #ddd;
+        }
+
+        .show {
+            display: block;
+        }
+
+        button {
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: "\f0d7";
+                font-family: $font-awesome ;
+                font-size: 20px;
+                color: $color-third;
+                font-weight: 700;
+                top: 0;
+                right: -15px;
+                width: 10px;
+
+            }
+        }
+
+        .search {
+            a {
+                padding: 31px 41px;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 28px;
+                text-transform: capitalize;
+
+            }
+        }
+
+
+    }
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+
+        .left {
+            margin: 72px 0;
+            width: 50%;
+
+            .subtitle {
+                line-height: 170%;
+                margin: 0px 20px 0 0;
+            }
+        }
+
+        .right {
+            width: 50%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+    }
+
+    .bg {
+        display: flex;
+        justify-content: end;
+    }
+
+
+
+}

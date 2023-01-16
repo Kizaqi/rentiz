@@ -1,0 +1,50 @@
+.header {
+    padding: 15px;
+    background-color: $color-first;
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 16px;
+
+    }
+
+    &__list {
+        display: flex;
+
+        li {
+            position: relative;
+            margin: 20px;
+            border-bottom: 3px solid transparent;
+            transition: all .6s ease 0s;
+
+            &:hover {
+                border-bottom: 3px solid $color-third;
+                transition: all .6s ease 0s;
+                margin-top: 5px;
+            }
+
+            a {
+                color: $color-secondary;
+            }
+        }
+
+    }
+
+    &__login {
+        a {
+            color: $color-secondary;
+        }
+
+        .log {
+            margin-right: 34px;
+        }
+
+
+    }
+}
+
+.burger-menu {
+    display: none;
+}
