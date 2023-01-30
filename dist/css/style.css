@@ -105,22 +105,21 @@ h6 {
   color: #fff;
 }
 
-.text {
-  font-weight: 600;
-}
-
 .text-68 {
   font-size: 68px;
   text-transform: capitalize;
   line-height: 126%;
+  font-weight: 600;
 }
 
 .text-48 {
   font-size: 48px;
+  font-weight: 600;
 }
 
 .text-26 {
   font-size: 26px;
+  font-weight: 600;
 }
 
 .text-18 {
@@ -195,6 +194,7 @@ h6 {
 .hero {
   background-color: #121B25;
   padding-top: 95px;
+  position: relative;
 }
 
 .hero .drop {
@@ -213,6 +213,7 @@ h6 {
           align-items: center;
   position: absolute;
   margin-top: 80px;
+  z-index: 10;
 }
 
 .hero .drop h4 {
@@ -308,15 +309,43 @@ h6 {
 
 .hero__row .right img {
   width: 100%;
+  position: relative;
+  z-index: 5;
 }
 
 .hero .bg {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 3;
+}
+
+.hero .bottom {
+  padding: 180px 0;
+  position: relative;
+  z-index: 7;
+}
+
+.hero .bottom__row {
+  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.residence {
+  background-image: url(../img/residence/bg-Residence.png);
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-color: #121B25;
+  padding: 160px 0;
 }
 
 @media (max-width: 1200px) {
@@ -493,3 +522,5 @@ h6 {
     max-width: unset;
   }
 }
+
+.webp .residence { background-image: url(../img/residence/bg-Residence.webp); }

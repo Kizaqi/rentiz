@@ -58,4 +58,9 @@ window.onclick = function(event) {
   
 burgerMenu('.burger-menu');
 
+
+@@include("slider.js")
+
+
+
   

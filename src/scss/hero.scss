@@ -1,6 +1,7 @@
 .hero {
     background-color: $color-first;
     padding-top: 95px;
+    position: relative;
 
     .drop {
         display: flex;
@@ -12,6 +13,7 @@
         align-items: center;
         position: absolute;
         margin-top: 80px;
+        z-index: 10;
 
         h4 {
             font-weight: 600;
@@ -108,14 +110,33 @@
 
             img {
                 width: 100%;
+                position: relative;
+                z-index: 5;
             }
         }
 
     }
 
     .bg {
-        display: flex;
-        justify-content: end;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        z-index: 3;
+
+    }
+
+    .bottom {
+        padding: 180px 0;
+        position: relative;
+        z-index: 7;
+
+        &__row {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
     }
 
 
