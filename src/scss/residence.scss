@@ -3,5 +3,56 @@
     width: 100%;
     object-fit: cover;
     background-color: $color-first;
-    padding: 160px 0;
+    padding: 100px 0;
+
+    .title {
+        padding-bottom: 20px;
+    }
+
+    .character {
+        padding-top: 22px;
+
+        h4 {
+            font-weight: 600;
+            font-size: 26px;
+            color: #fff;
+            line-height: 126%;
+        }
+
+        p {
+            color: $color-secondary;
+            font-size: 16px;
+            line-height: 170%;
+        }
+
+        .other {
+            display: flex;
+            justify-content: space-between;
+            max-width: 255px;
+            width: 100%;
+
+            p {
+                display: flex;
+                text-align: center;
+                align-items: center;
+                font-size: 16px;
+                line-height: 19px;
+                color: #fff;
+
+            }
+
+            img {
+                padding-right: 5px;
+            }
+
+
+        }
+    }
+
+    .view {
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+        text-transform: capitalize;
+    }
 }

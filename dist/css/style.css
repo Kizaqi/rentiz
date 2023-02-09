@@ -191,6 +191,86 @@ h6 {
   display: none;
 }
 
+.owl-next {
+  position: absolute;
+  right: -5%;
+  top: 35%;
+  width: 30px;
+  height: 30px;
+  -webkit-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+.owl-next span {
+  color: white;
+  position: absolute;
+  top: 2px;
+  left: 11px;
+  font-size: 20px;
+}
+
+.owl-prev {
+  position: absolute;
+  left: -5%;
+  top: 35%;
+  width: 30px;
+  height: 30px;
+  -webkit-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+.owl-prev span {
+  color: white;
+  position: absolute;
+  top: 3px;
+  left: 10px;
+  font-size: 20px;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+  background-color: transparent;
+  color: #121B25;
+  text-decoration: none;
+  border: 1px solid white;
+  -webkit-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+.owl-carousel .owl-theme .header-carousel .owl-next {
+  position: absolute;
+  right: 20px;
+  top: 53%;
+  width: 30px;
+  height: 30px;
+}
+
+.owl-carousel .owl-theme .header-carousel .owl-next span {
+  color: white;
+  position: absolute;
+  top: 2px;
+  left: 11px;
+  font-size: 20px;
+}
+
+.owl-carousel .owl-theme .header-carousel .owl-prev {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.owl-carousel .owl-theme .header-carousel .owl-prev span {
+  color: white;
+  position: absolute;
+  top: 3px;
+  left: 10px;
+  font-size: 20px;
+}
+
 .hero {
   background-color: #121B25;
   padding-top: 95px;
@@ -345,7 +425,67 @@ h6 {
   -o-object-fit: cover;
      object-fit: cover;
   background-color: #121B25;
-  padding: 160px 0;
+  padding: 100px 0;
+}
+
+.residence .title {
+  padding-bottom: 20px;
+}
+
+.residence .character {
+  padding-top: 22px;
+}
+
+.residence .character h4 {
+  font-weight: 600;
+  font-size: 26px;
+  color: #fff;
+  line-height: 126%;
+}
+
+.residence .character p {
+  color: #D6D6D6;
+  font-size: 16px;
+  line-height: 170%;
+}
+
+.residence .character .other {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 255px;
+  width: 100%;
+}
+
+.residence .character .other p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+}
+
+.residence .character .other img {
+  padding-right: 5px;
+}
+
+.residence .view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 60px;
+  text-transform: capitalize;
 }
 
 @media (max-width: 1200px) {

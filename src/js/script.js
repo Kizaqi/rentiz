@@ -41,7 +41,7 @@ window.onclick = function(event) {
       }
     }
   }
-}
+};
 
 
 // var owl = $('.owl-carousel');
